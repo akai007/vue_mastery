@@ -28,8 +28,11 @@ let total = 0
 
 let effect = () => { total = product.price * product.quantity }
 
+console.log('depsMap', depsMap);
 track('quantity')
-effect()
+console.log('depsMap', depsMap);
+
+trigger('quantity')
 console.log(total);
 
 product.quantity = 3
